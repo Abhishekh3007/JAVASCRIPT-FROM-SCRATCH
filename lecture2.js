@@ -117,7 +117,7 @@
 //     super.study();
 //     console.log("hello polymorphism")
 //    }
-
+nction
      
 // }
 // let s2=new teacher("xyz",30,"maths");
@@ -127,3 +127,22 @@
 
 
 //----------------------------------
+//functions
+
+
+// fu ab(name){
+//     console.log("hello"+name);
+// }
+// ab("abc");
+
+//iife 
+// (function name(){
+//     console.log("hello");
+// })()
+
+//arrow function
+// let ab=(age)=> {
+//     console.log("hello"+age);
+
+// }
+// ab(12)
