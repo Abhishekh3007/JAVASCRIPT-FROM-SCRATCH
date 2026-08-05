@@ -89,3 +89,41 @@
 //     console.log("a is not equal to b and a is greater than b");
 // }
 
+
+// clases
+
+// class student{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     study(){
+
+//         console.log(this.name+" is studying");
+//         console.log(this.age+" is my age");
+//     }
+// }
+// let s1=new student("abc",24);
+// s1.study();
+
+
+// class teacher extends student{
+//     constructor(name,age,subject){
+//         super(name,age);
+//         this.subject=subject;
+//     }
+//      teaching(){console.log(this.name+" is teaching "+this.subject)}
+//    studying(){
+//     super.study();
+//     console.log("hello polymorphism")
+//    }
+
+     
+// }
+// let s2=new teacher("xyz",30,"maths");
+// // s2.study();
+// // s2.teaching();
+// s2.studying();
+
+
+//----------------------------------
