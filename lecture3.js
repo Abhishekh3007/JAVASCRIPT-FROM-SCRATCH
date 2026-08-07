@@ -63,9 +63,45 @@ let bank_b=bank();
 // }
 // console.log("end");
 //async program
-console.log("begin");
-setTimeout(()=>{
-    console.log("fetched in side the async pgm")
-},6000)
+// console.log("begin");
+// setTimeout(()=>{
+//     console.log("fetched in side the async pgm")
+// },6000)
 
-console.log("end");
+// console.log("end");
+
+
+
+//call back function
+
+function add(a,b,cb){
+    console.log("im inside the add function");
+ call(a,b);
+}
+
+
+//base function
+function call(a,b){
+    let sum=a+b;
+    console.log(sum);
+}
+add(10,20,call);
+
+//callback hell
+login(function(){
+
+    profile(function(){
+
+        orders(function(){
+
+            payment(function(){
+
+                logout();
+
+            });
+
+        });
+
+    });
+
+});
