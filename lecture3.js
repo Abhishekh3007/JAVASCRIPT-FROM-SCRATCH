@@ -33,7 +33,25 @@ function bank(){
 }
 let bank_b=bank();
 
-bank_b(); 
+// bank_b(); 
 
 
-//hoisting
+//hoisting(temporial dead zone)
+
+// console.log(ex);
+// var ex=5;
+
+// console.log(exx)
+// let exx=10;
+
+
+// ab();
+// function ab(){
+//     console.log("hello ")
+// }
+// let fun=abc();
+// function abc(){
+//     console.log("hello world")
+// }
+
+
