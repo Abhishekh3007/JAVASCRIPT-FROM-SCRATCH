@@ -55,3 +55,17 @@ let bank_b=bank();
 // }
 
 
+//--------------------------------------
+//sync program
+
+// console.log("begin");
+// for(let i=0;i<1000000000000;i++){
+// }
+// console.log("end");
+//async program
+console.log("begin");
+setTimeout(()=>{
+    console.log("fetched in side the async pgm")
+},6000)
+
+console.log("end");
