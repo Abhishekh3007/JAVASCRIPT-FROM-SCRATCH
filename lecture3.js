@@ -85,23 +85,40 @@ function call(a,b){
     let sum=a+b;
     console.log(sum);
 }
-add(10,20,call);
+// add(10,20,call);
 
 //callback hell
-login(function(){
+// login(function(){
 
-    profile(function(){
+//     profile(function(){
 
-        orders(function(){
+//         orders(function(){
 
-            payment(function(){
+//             payment(function(){
 
-                logout();
+//                 logout();
 
-            });
+//             });
 
-        });
+//         });
 
-    });
+//     });
 
+// });
+
+const orderFood = new Promise((resolve, reject) => {
+    const foodReady = true;
+
+    setTimeout(() => {
+        if (foodReady) {
+            resolve(" Food delivered!");
+        } else {
+            reject(" Order cancelled");
+        }
+    }, 3000);
 });
+
+orderFood
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
+
