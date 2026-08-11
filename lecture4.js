@@ -56,7 +56,7 @@
         return new Promise((resolve, reject)=>{
             console.log("ordering food");
             setTimeout(()=>{
-                const foodReady= true;
+                const foodReady= 1000;
              if(foodReady){
                 resolve("food is ready")
 
@@ -81,3 +81,4 @@
         
     }
     eatFood()
+
