@@ -1,5 +1,7 @@
 
 import './card.css'
+import GrandChild from './grandChild'
+//child component
 
 const card = (props) => {
   return (
@@ -10,6 +12,7 @@ const card = (props) => {
         <img className='img' src={props.img} />
         
         <p className="about">{props.desc}</p>    
+        <GrandChild  data={props.data}/>
       
     </div>
   )
