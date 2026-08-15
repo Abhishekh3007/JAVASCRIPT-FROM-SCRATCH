@@ -11,7 +11,8 @@ const card = (props) => {
         </p>
         <img className='img' src={props.img} />
         
-        <p className="about">{props.desc}</p>    
+        <p className="about">{props.desc}</p>   
+         <h1>{props.children}</h1>
         <GrandChild  data={props.data}/>
       
     </div>
