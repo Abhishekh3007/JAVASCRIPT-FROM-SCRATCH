@@ -13,12 +13,20 @@ This file maintains an up-to-date list of project files and structure.
       - 📄 `React_Intern\interns\public\icons.svg` (Unknown)
     - 📁 `React_Intern\interns\src/`
       - 📁 `React_Intern\interns\src\assets/`
+        - 📄 `React_Intern\interns\src\assets\abb.jpg` (Unknown)
+        - 📄 `React_Intern\interns\src\assets\abc.png` (Unknown)
+        - 📄 `React_Intern\interns\src\assets\abd.png` (Unknown)
         - 📄 `React_Intern\interns\src\assets\hero.png` (Unknown)
         - 📄 `React_Intern\interns\src\assets\react.svg` (Unknown)
         - 📄 `React_Intern\interns\src\assets\vite.svg` (Unknown)
+      - 📁 `React_Intern\interns\src\component/`
+        - 📄 `React_Intern\interns\src\component\card.css` (CSS)
+        - 📄 `React_Intern\interns\src\component\card.jsx` (React)
+          - *Imports:* `./card.css`, `./grandChild`
+        - 📄 `React_Intern\interns\src\component\grandChild.jsx` (React)
       - 📄 `React_Intern\interns\src\App.css` (CSS)
       - 📄 `React_Intern\interns\src\App.jsx` (React)
-        - *Imports:* `./App.css`
+        - *Imports:* `./App.css`, `react`
       - 📄 `React_Intern\interns\src\index.css` (CSS)
       - 📄 `React_Intern\interns\src\main.jsx` (React)
         - *Imports:* `react-dom/client`, `./index.css`, `./App.jsx`
@@ -42,4 +50,4 @@ This file maintains an up-to-date list of project files and structure.
 - 📄 `README.md` (Markdown)
 
 ---
-Last updated: 2026-08-12T09:36:34.887Z
+Last updated: 2026-08-18T11:46:29.921Z
