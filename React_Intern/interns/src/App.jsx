@@ -3,51 +3,45 @@ import './App.css'
 // import  one from './assets/abc.png'
 // import  two from './assets/abd.png'
 // import  three from './assets/abb.jpg'
-import {useState,useEffect} from 'react';
+// import {useState,useEffect} from 'react';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Navbar from './component/navbar'
 
 //parent component
+
+const router=createBrowserRouter([
+  {
+    path:'/',
+    element: <><Navbar /><h1>WELCOME TO MY CHANNEL  </h1></>
+  },
+  {
+  path:'/about',
+  element: <><Navbar /><h1>ABOUT US</h1></>
+  },
+  {
+    path:'/contact',
+    element: <><Navbar /><h1>CONTACT US</h1></>
+  },
+  {
+    path:'/login',
+    element: <><Navbar /><h1>LOGIN</h1></>
+  }
+])
 function App() {
-let vari=1;
-  //  const [first, setfirst] = useState(second)
-  const [state,setState]=useState(2);
 
-  function handbut(){
-    setState(state+1);
-    vari++;
-    console.log(vari);
-  }
-   function handbut1(){
-    setState(state-1);
-    vari--;
-  }
-  //variation1
-  useEffect(()=>{
-        alert("hello guys")
-
-        return ()=>{
-        alert("done with above code  cleaning up  ")
-        }
-
-
-  },[state,vari]);
 
 
 
   return (
-    <>
+    <div>
+      <RouterProvider router={router}/>
 
-     {/* <Card   name={"Abhishekh"}  img={one}  desc={"Hello I am Abhishek wali , I am a software engineer and devops engineer"}/>
-     <Card   name={"Akshay"}  img={two}  desc={"Hello I am Akshay , I am a software engineer"}/> */}
-    {/* <Card   name={"Pradyumana"}  img={three}  desc={"Hello I am Pradyumana , I am a devops engineer"} data={"hello world"}/> */}
-   
-    <button onClick={handbut}>Increment</button>
-    <button onClick={handbut1}>decrement</button>
-    <h3>Count : {state}</h3>
+  
 
 
 
-    </>
+    </div>
   )
 }
 
-export default App
+export default App;

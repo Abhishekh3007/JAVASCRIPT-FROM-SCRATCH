@@ -1,0 +1,21 @@
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    background-color:#4b4848;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+.nava{
+    fontsize:1.5rem;
+    font-weight:bold;
+    text-decoration: none;
+    color:white;
+}
+.navlink{
+    
+}
